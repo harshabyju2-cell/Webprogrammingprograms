@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — WebNova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-row">
+    <a href="index1.html" class="logo"><span class="logo-mark"></span>WebNova</a>
+
+    <nav class="primary-nav" id="primary-nav">
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact1.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div style="display:flex; align-items:center; gap:20px;">
+      <a href="contact1.html" class="nav-cta" id="desktop-cta">Get in touch</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="wrap">
+    <p class="eyebrow-tag">What we offer</p>
+    <h1>Services built to work together, not around each other.</h1>
+    <p>Design, development, and SEO handled by one team, so nothing gets lost between handoffs.</p>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Core services</h2>
+      <p>Pick one discipline or bring us in end-to-end — the work is scoped around what your site actually needs.</p>
+    </div>
+
+    <div class="service-grid">
+      <article class="service-card">
+        <span class="service-index">01</span>
+        <h3>Web Design</h3>
+        <p>Interfaces rooted in your brand and your customer's goals, not a template — wireframed, tested, and refined before a line of code is written.</p>
+        <ul>
+          <li>Brand-aligned visual system</li>
+          <li>Responsive layouts for every screen</li>
+          <li>Prototypes you can click through</li>
+        </ul>
+      </article>
+
+      <article class="service-card featured">
+        <span class="service-index">02</span>
+        <h3>Development</h3>
+        <p>Clean, maintainable builds on modern frameworks — fast to load, easy to extend, and built to survive beyond launch day.</p>
+        <ul>
+          <li>Performance-first front end</li>
+          <li>CMS & e-commerce integration</li>
+          <li>Ongoing support and updates</li>
+        </ul>
+      </article>
+
+      <article class="service-card">
+        <span class="service-index">03</span>
+        <h3>SEO</h3>
+        <p>Technical and content foundations that help the right people find you — measured in rankings and traffic, not vanity metrics.</p>
+        <ul>
+          <li>Technical site audits</li>
+          <li>Keyword & content strategy</li>
+          <li>Monthly performance reporting</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:0;">
+      <h2>How a project runs</h2>
+      <p>A straightforward four-step process from first call to launch.</p>
+    </div>
+
+    <div class="process-list">
+      <div class="process-step">
+        <span class="step-no">01</span>
+        <h4>Discover</h4>
+        <p>We learn your business, your customers, and what "success" needs to look like.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-no">02</span>
+        <h4>Design</h4>
+        <p>Wireframes and visual designs, reviewed together until the direction feels right.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-no">03</span>
+        <h4>Build</h4>
+        <p>Development in weekly increments, with a working preview you can check anytime.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-no">04</span>
+        <h4>Launch & grow</h4>
+        <p>We ship, monitor, and keep tuning SEO and performance after launch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index1.html" class="logo"><span class="logo-mark"></span>WebNova</a>
+        <p>A small studio helping ambitious teams design, build, and grow their web presence.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:webnova@gmail.com">webnova@gmail.com</a></li>
+          <li><span>Thrissur, Kerala India</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index1.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact1.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 WebNova. All rights reserved.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('primary-nav');
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+</body>
+</html>

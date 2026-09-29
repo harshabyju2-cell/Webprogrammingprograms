@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact —WebNova</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-row">
+    <a href="index1.html" class="logo"><span class="logo-mark"></span>WebNova</a>
+
+    <nav class="primary-nav" id="primary-nav">
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact1.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div style="display:flex; align-items:center; gap:20px;">
+      <a href="contact1.html" class="nav-cta" id="desktop-cta">Get in touch</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="wrap">
+    <p class="eyebrow-tag">Let's talk</p>
+    <h1>Tell us about your project.</h1>
+    <p>Send a few details and we'll get back to you within one business day with next steps.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <h2>Contact details</h2>
+      <p>Prefer email or want to reach us directly? Here's how to find us.</p>
+
+      <div class="contact-detail">
+        <span class="label">Email</span>
+        <a href="mailto:webnova@gmail.com">webnova@gmail.com</a>
+      </div>
+      <div class="contact-detail">
+        <span class="label">Location</span>
+        <span class="value">Thrissur, Kerala, India</span>
+      </div>
+      <div class="contact-detail">
+        <span class="label">Response time</span>
+        <span class="value">Within 1 business day</span>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="return false;">
+      <div class="form-row">
+        <div class="field">
+          <label for="fname">First name</label>
+          <input type="text" id="fname" name="fname" placeholder="Jane" required>
+        </div>
+        <div class="field">
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" placeholder="Doe" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="jane@gmail.com" required>
+      </div>
+
+      <div class="field">
+        <label for="service">What do you need help with?</label>
+        <input type="text" id="service" name="service" placeholder="Web design, development, SEO...">
+      </div>
+
+      <div class="field">
+        <label for="message">Project details</label>
+        <textarea id="message" name="message" placeholder="Tell us a bit about your project and timeline."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-dark">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index1.html" class="logo"><span class="logo-mark"></span>WebNova</a>
+        <p>A small studio helping ambitious teams design, build, and grow their web presence.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:webnova@gmail.com">webnova@gmail.com</a></li>
+          <li><span>Thrissur, Kerala, India</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index1.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact1.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 WebNova. All rights reserved.</span>
+      <span>Built with care.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('primary-nav');
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
+</body>
+</html>
